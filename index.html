@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | ETL Developer & Aspiring Data Scientist</title>
+  <!-- Bootstrap CDN for styling -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoR6V7mUOU6d2zW3rZl6b6MGxZ3pmx1kpG2x0xIM+B07jRM"
+    crossorigin="anonymous"
+  />
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    .hero {
+      background-color: #ffffff;
+      padding: 80px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #6c757d;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.75rem;
+      color: #495057;
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
+    .footer {
+      padding: 40px 0;
+      background-color: #ffffff;
+      text-align: center;
+      border-top: 1px solid #dee2e6;
+    }
+    .footer a {
+      color: #495057;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Ramanuja</h1>
+      <p>ETL Developer & Aspiring Data Scientist</p>
+      <p>
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
+          >LinkedIn</a
+        > |
+        <a href="mailto:youremail@example.com">Email</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p>
+          As a seasoned ETL Developer with 5+ years of experience in designing and
+          implementing robust data pipelines, I am transitioning into Data Science.
+          My background includes data integration, transformation, and loading
+          processes for large-scale data warehouses. I am passionate about
+          leveraging data-driven insights to solve complex business problems.
+          Currently, I am honing skills in statistical modeling, machine learning,
+          and visualization to deliver impactful analytics solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="row text-center">
+          <div class="col-6 col-sm-4 col-md-3 mb-4">
+            <div class="p-3 bg-white shadow-sm rounded">
+              <h5>Data Engineering</h5>
+              <p class="mb-0">SQL, Python, Apache Spark</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 mb-4">
+            <div class="p-3 bg-white shadow-sm rounded">
+              <h5>ETL Tools</h5>
+              <p class="mb-0">Informatica, Talend, SSIS</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 mb-4">
+            <div class="p-3 bg-white shadow-sm rounded">
+              <h5>Data Science</h5>
+              <p class="mb-0">Pandas, NumPy, Scikit-learn</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 mb-4">
+            <div class="p-3 bg-white shadow-sm rounded">
+              <h5>Visualization</h5>
+              <p class="mb-0">Tableau, Power BI, Matplotlib</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3 mb-4">
+            <div class="p-3 bg-white shadow-sm rounded">
+              <h5>Machine Learning</h5>
+              <p class="mb-0">Regression, Classification, Clustering</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section - Dynamically fetched from GitHub -->
+  <section id="projects" class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="row justify-content-center" id="projects-container">
+      <!-- JavaScript will populate this section with project cards -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="Email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ramanuja. All rights reserved.</p>
+      <p>
+        <a href="https://github.com/RamanujaTechGuy" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-q2kyQng12L+I7ZPIOeHSVDmVQwL5MpOWFBR+U1nFAd5zs7daxuEx8KJj0RSXKcEz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- GitHub API fetch script -->
+  <script>
+    const username = 'RamanujaTechGuy';
+    const container = document.getElementById('projects-container');
+
+    fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
+      .then(response => response.json())
+      .then(repos => {
+        repos.forEach(repo => {
+          // Only showcase repositories with a description
+          if (repo.language && repo.description) {
+            const col = document.createElement('div');
+            col.className = 'col-md-4 mb-4';
+
+            const card = document.createElement('div');
+            card.className = 'card card-hover h-100';
+
+            const cardBody = document.createElement('div');
+            cardBody.className = 'card-body';
+
+            const title = document.createElement('h5');
+            title.className = 'card-title';
+            title.textContent = repo.name.replace(/-/g, ' ');
+
+            const desc = document.createElement('p');
+            desc.className = 'card-text';
+            desc.textContent = repo.description;
+
+            const link = document.createElement('a');
+            link.href = repo.html_url;
+            link.target = '_blank';
+            link.className = 'btn btn-primary';
+            link.textContent = 'View on GitHub';
+
+            cardBody.appendChild(title);
+            cardBody.appendChild(desc);
+            cardBody.appendChild(link);
+            card.appendChild(cardBody);
+            col.appendChild(card);
+            container.appendChild(col);
+          }
+        });
+      })
+      .catch(error => console.error('Error fetching repos:', error));
+  </script>
+</body>
+</html>
