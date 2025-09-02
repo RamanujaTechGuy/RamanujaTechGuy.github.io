@@ -1,234 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio | ETL Developer & Aspiring Data Scientist</title>
-  <!-- Bootstrap CDN for styling -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoR6V7mUOU6d2zW3rZl6b6MGxZ3pmx1kpG2x0xIM+B07jRM"
-    crossorigin="anonymous"
-  />
-  <style>
-    /* Custom Styles */
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #343a40;
-    }
-    .hero {
-      background-color: #ffffff;
-      padding: 80px 0;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #6c757d;
-    }
-    .section-title {
-      margin-top: 60px;
-      margin-bottom: 30px;
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.75rem;
-      color: #495057;
-    }
-    .card-hover:hover {
-      transform: translateY(-5px);
-      transition: transform 0.3s ease;
-    }
-    .footer {
-      padding: 40px 0;
-      background-color: #ffffff;
-      text-align: center;
-      border-top: 1px solid #dee2e6;
-    }
-    .footer a {
-      color: #495057;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramanuja - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>Ramanuja</h1>
-      <p>ETL Developer & Aspiring Data Scientist</p>
-      <p>
-        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"
-          >LinkedIn</a
-        > |
-        <a href="mailto:youremail@example.com">Email</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h2 class="section-title">About Me</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <p>
-          As a seasoned ETL Developer with 5+ years of experience in designing and
-          implementing robust data pipelines, I am transitioning into Data Science.
-          My background includes data integration, transformation, and loading
-          processes for large-scale data warehouses. I am passionate about
-          leveraging data-driven insights to solve complex business problems.
-          Currently, I am honing skills in statistical modeling, machine learning,
-          and visualization to deliver impactful analytics solutions.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="container">
-    <h2 class="section-title">Skills</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="row text-center">
-          <div class="col-6 col-sm-4 col-md-3 mb-4">
-            <div class="p-3 bg-white shadow-sm rounded">
-              <h5>Data Engineering</h5>
-              <p class="mb-0">SQL, Python, Apache Spark</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
             </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 mb-4">
-            <div class="p-3 bg-white shadow-sm rounded">
-              <h5>ETL Tools</h5>
-              <p class="mb-0">Informatica, Talend, SSIS</p>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 mb-4">
-            <div class="p-3 bg-white shadow-sm rounded">
-              <h5>Data Science</h5>
-              <p class="mb-0">Pandas, NumPy, Scikit-learn</p>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 mb-4">
-            <div class="p-3 bg-white shadow-sm rounded">
-              <h5>Visualization</h5>
-              <p class="mb-0">Tableau, Power BI, Matplotlib</p>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 mb-4">
-            <div class="p-3 bg-white shadow-sm rounded">
-              <h5>Machine Learning</h5>
-              <p class="mb-0">Regression, Classification, Clustering</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Projects Section - Dynamically fetched from GitHub -->
-  <section id="projects" class="container">
-    <h2 class="section-title">Projects</h2>
-    <div class="row justify-content-center" id="projects-container">
-      <!-- JavaScript will populate this section with project cards -->
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Ramanuja</span>
+                </h1>
+                <p class="hero-subtitle">Master's Student in Applied Statistics & Data Science</p>
+                <p class="hero-description">
+                    Master's student with 5 years of professional experience in Deloitte and Atos, specializing in machine learning, large-scale data analysis, and statistical modeling. Seeking to apply technical expertise as a Data Science Intern at Capital One.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <img src="IMG_3891_crop.JPG" alt="Ramanuja">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container">
-    <h2 class="section-title">Get in Touch</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="Name" required />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="Email" required />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" name="Message" rows="4" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="education-item">
+                        <h3>Master's in Applied Statistics & Data Science</h3>
+                        <p class="education-institution">University of Texas at Arlington, Texas, United States</p>
+                        <p class="education-duration">August 2024 – May 2026</p>
+                        <p class="education-coursework">
+                            <strong>Coursework:</strong> Statistical Inference, Machine Learning, Big Data Analytics, Deep Learning, Data Visualization
+                        </p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Bachelor's in Computer Science & Engineering</h3>
+                        <p class="education-institution">Jawaharlal Nehru Technological University, Hyderabad, Telangana, India</p>
+                        <p class="education-duration">August 2015 – May 2019</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>5+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1TB+</h3>
+                            <p>Data Processed Daily</p>
+                        </div>
+                        <div class="stat">
+                            <h3>20%</h3>
+                            <p>Processing Time Reduced</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-avatar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Ramanuja. All rights reserved.</p>
-      <p>
-        <a href="https://github.com/RamanujaTechGuy" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-  </footer>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python (Scikit-learn, Pandas, NumPy, TensorFlow)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SAS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Statistics & ML</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Hypothesis Testing & Regression Inference</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Clustering & Supervised/Unsupervised Learning</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Deep Learning & NLP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Generative AI</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Engineering & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">AWS (S3, Redshift, Glue, Kinesis)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Airflow & ETL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Power BI & Tableau</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git, Jupyter, Azure, VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Bootstrap JS Bundle -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-q2kyQng12L+I7ZPIOeHSVDmVQwL5MpOWFBR+U1nFAd5zs7daxuEx8KJj0RSXKcEz"
-    crossorigin="anonymous"
-  ></script>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Chronic Disease Epidemiology & Hotspot Analytics Dashboard</h3>
+                        <p>
+                            Applied hypothesis testing, regression, and clustering on CDC health data to identify high-prevalence states and demographics. Designed a Power BI dashboard to communicate insights for public health strategy and resource allocation.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Statistics</span>
+                            <span class="tag">Clustering</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Early Detection of Stroke using Random Forest & XG Boost</h3>
+                        <p>
+                            Built a streaming data pipeline (AWS Kinesis, Glue, Redshift) for large-scale anomaly detection and trend analysis. Automated deployment with GitHub Actions, ensuring CI/CD readiness for analytics workloads.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Random Forest</span>
+                            <span class="tag">XGBoost</span>
+                            <span class="tag">CI/CD</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Automated Workflow with Generative AI for Content Summarization</h3>
+                        <p>
+                            Developed LLM-based workflow (OpenAI, Google Gemini) for NLP text summarization, improving information dissemination efficiency. Demonstrated prompt engineering and applied machine learning in unstructured text processing.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">Gemini</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">LLM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- GitHub API fetch script -->
-  <script>
-    const username = 'RamanujaTechGuy';
-    const container = document.getElementById('projects-container');
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Consultant</h3>
+                        <h4>Deloitte, Hyderabad, India</h4>
+                        <span class="experience-duration">July 2022 – June 2024</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Engineered ETL pipelines processing 1TB+ of data daily, enabling downstream machine learning and advanced analytics while reducing processing time by 20%.</li>
+                            <li>Developed automated delta load process with error detection, cutting manual intervention by 80% and ensuring higher data reliability for predictive modeling.</li>
+                            <li>Optimized SQL queries and validation processes, improving data integrity for analytics dashboards and statistical reports.</li>
+                            <li>Collaborated with stakeholders to translate data outputs into business insights supporting decision-making.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Associate Consultant</h3>
+                        <h4>Atos, Chennai, India</h4>
+                        <span class="experience-duration">Nov 2019 – June 2022</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Built automated pipelines for data validation and quality checks, increasing accuracy of downstream statistical models by 25%.</li>
+                            <li>Applied clustering and geospatial analysis on large datasets to identify patterns and insights in public sector projects.</li>
+                            <li>Created technical design documents to standardize data science workflows, improving reproducibility and knowledge sharing.</li>
+                            <li>Enhanced missing data handling and applied strict validation rules to strengthen robustness of statistical inference models.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    fetch(`https://api.github.com/users/${username}/repos?sort=updated`)
-      .then(response => response.json())
-      .then(repos => {
-        repos.forEach(repo => {
-          // Only showcase repositories with a description
-          if (repo.language && repo.description) {
-            const col = document.createElement('div');
-            col.className = 'col-md-4 mb-4';
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Awards</h2>
+            <div class="certifications-grid">
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Data Engineering Foundation</h3>
+                        <p>Deloitte</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Applause Award</h3>
+                        <p>Deloitte for Outstanding Performance</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>AZ-900 Azure Fundamentals</h3>
+                        <p>Microsoft Certified</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Value Award</h3>
+                        <p>Achievers Club at Atos for Adaptability</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>ETL pipelines with Shell, Airflow & Kafka</h3>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            const card = document.createElement('div');
-            card.className = 'card card-hover h-100';
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>
+                        I'm always interested in new opportunities and exciting projects. 
+                        Whether you have a question or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Ramanuja.uta@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Arlington, Texas</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="www.linkedin.com/in/ramanujakuntla" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
 
-            const cardBody = document.createElement('div');
-            cardBody.className = 'card-body';
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-            const title = document.createElement('h5');
-            title.className = 'card-title';
-            title.textContent = repo.name.replace(/-/g, ' ');
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ramanuja. All rights reserved.</p>
+        </div>
+    </footer>
 
-            const desc = document.createElement('p');
-            desc.className = 'card-text';
-            desc.textContent = repo.description;
-
-            const link = document.createElement('a');
-            link.href = repo.html_url;
-            link.target = '_blank';
-            link.className = 'btn btn-primary';
-            link.textContent = 'View on GitHub';
-
-            cardBody.appendChild(title);
-            cardBody.appendChild(desc);
-            cardBody.appendChild(link);
-            card.appendChild(cardBody);
-            col.appendChild(card);
-            container.appendChild(col);
-          }
-        });
-      })
-      .catch(error => console.error('Error fetching repos:', error));
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
