@@ -1,5 +1,8 @@
 // DOM Content Loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize EmailJS
+    initEmailJS();
+    
     // Initialize all functionality
     initNavigation();
     initScrollAnimations();
@@ -10,6 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     initParallaxEffects();
     initLoadingAnimations();
 });
+
+// Initialize EmailJS
+function initEmailJS() {
+    // Initialize EmailJS with your public key
+    // You'll need to replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key
+    emailjs.init('YOUR_PUBLIC_KEY');
+}
 
 // Navigation functionality
 function initNavigation() {
@@ -176,15 +186,37 @@ function initContactForm() {
                 return;
             }
             
-            // Simulate form submission
-            showNotification('Sending message...', 'info');
-            
-            setTimeout(() => {
-                showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
-                this.reset();
-            }, 2000);
+            // Send email using EmailJS
+            sendEmail(name, email, subject, message, this);
         });
     }
+}
+
+// Send email using EmailJS
+function sendEmail(name, email, subject, message, form) {
+    // Show loading notification
+    showNotification('Sending message...', 'info');
+    
+    // EmailJS template parameters
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+        to_name: 'Ramanuja'
+    };
+    
+    // Send email using EmailJS
+    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
+            form.reset();
+        })
+        .catch(function(error) {
+            console.error('FAILED...', error);
+            showNotification('Failed to send message. Please try again or contact me directly.', 'error');
+        });
 }
 
 // Email validation
